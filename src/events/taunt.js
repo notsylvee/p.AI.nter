@@ -28,7 +28,7 @@ module.exports = {
         if (chance < 497) {
             return;
           } else {
-            message.channel.send(`${taunt}`);
+            message.channel.send(`<:Painter:1395294811447365682> ${taunt}`);
           };
     },
 };
