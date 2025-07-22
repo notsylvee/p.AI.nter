@@ -5,7 +5,7 @@ module.exports = {
   async execute(message) {
     if (message.author.bot || !message.guild) return;
 
-    const tauntsJsonData = await fs.readFile("data/taunts.json", {encoding: "utf8"});
+    const tauntsJsonData = await fs.readFile("data/voicelines.json", {encoding: "utf8"});
     const tauntsMap = JSON.parse(tauntsJsonData);
     const taunts = tauntsMap["taunts"];
     const taunt = taunts[Math.floor(Math.random() * taunts.length)];
