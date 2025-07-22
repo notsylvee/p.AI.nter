@@ -1,4 +1,4 @@
-const { PermissionFlagsBits } = require("discord.js");
+const fs = require("fs/promises");
 
 module.exports = {
   name: "messageCreate",
